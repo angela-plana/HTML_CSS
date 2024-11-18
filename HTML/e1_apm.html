@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercici 1</title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            width: 90vmin;
+            height: 80vmin;
+            border-radius: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background-color: #1e90ff;
+            padding: 30px;
+            font-size: 50px;
+        }
+        .main-aside {
+            display: flex;
+            flex: 1;
+        }
+        .main {
+            background-color: #00ffff;
+            flex: 2;
+            padding: 20px;
+            text-align: start;
+            font-size: 50px;
+        }
+        .aside {
+            background-color: #afeeee;
+            flex: 1;
+            padding: 20px;
+            text-align: start;
+            font-size: 50px;
+        }
+        .footer {
+            background-color: #ffdab9;
+            padding: 30px;
+            text-align: start;
+            font-size: 50px;
+        }
+    </style>   
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="main-aside">
+                <div class="main">Main</div>
+                <div class="aside">Aside</div>
+            </div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>

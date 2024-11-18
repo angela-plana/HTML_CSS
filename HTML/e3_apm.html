@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EXERCICI_3</title>
+    </head>
+    <style>
+        body {
+            background-color: green;
+        }
+        h1 {
+            font-size: medium;
+        }
+
+        p {
+            font-size: medium;
+            font-weight: normal;
+        }
+
+        .guions {
+            list-style-type: none; 
+        }
+
+        .guions li:before {
+            content: '- '; 
+        }
+
+        a {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 1px solid white;
+        }
+
+        pre {
+            text-align: left;
+            margin: 0; 
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px dashed black;
+            padding: 8px;
+            text-align: center; 
+        }
+    </style>
+    <body>
+        <h1>A nested list</h1>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+                <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                        <ul>
+                            <li>China</li>
+                            <li>Africa</li>
+                        </ul>
+                </ul>
+            <li>Milk</li>
+        </ul>
+        <p>Coffee</p>
+        <ul class="guions">
+            <li>black hot drink</li>
+        </ul>
+        <p>Milk</p>
+        <ul class="guions">
+            <li>white cold drink</li>
+        </ul>
+        <h1>Numbered list:</h1>
+        <ol>
+            <li>Aplles</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <h1>Letters list:</h1>
+        <ol type="A">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <h1>Roman numbers list:</h1>
+        <ol type="I">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <hr>
+        <p>Link per enviar emails a una adreça determinada:</p>
+        <a href="mailto:angela.plana.7e7@itb.cat">Enviar email</a>
+        <hr>
+        <h2>CREATE TABLE examples</h2>
+        <ul>
+            <li>
+                <a href="https://itb.cat/">Basic CREATE TABLE statement</a>
+            </li>
+            <li>
+                <a href="https://itb.cat/">Creating table with a particular storage engine</a>
+            </li>
+        </ul>
+        <h2>Basic CREATE TABLE statement</h2>
+        <p>A very basic CREATE TABLE statement whixh should work in any SQL database:</p>
+        <pre>
+mysql&gt; CREATE TABLE example (
+            id INT,
+            data VARCHAR(100)
+        );
+Query OK, 0 rows affected (0.03 sec)
+        </pre>
+        </p>Use SHOW CREATE TABLE (see
+            <a href="https://itb.cat">below)</a> 
+        to check that MySQL has created the table.</p>
+        <h2>Crear una tabla propia al html (per practicar)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Hello World</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Viewing a table definition</h2>
+        <p>For basic information on table columns, use DESC tablename:</p>
+        <pre>
+mysql&gt; DESC example:
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| id    | int(11)     | YES  |     | NULL    |       |
+| data  | varchar(100)| YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00)
+        </pre>
+    </body>
+</html>
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercici 2</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            background-color: white;
+            
+        }
+        .container {
+            border: 1px solid grey;
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            background-color: white;
+            
+        }
+
+        .group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            flex: 1;
+            width: 100%;
+            padding: 3px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            display: block;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: #b6c4d3;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: slateblue;
+            color: white;
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <form action="#" method="post">
+                <div class="group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="group">
+                    <label for="email">Correu<br>electrònic:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="group">
+                    <label for="message">Missatge:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div> 
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>
