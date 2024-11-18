@@ -1,0 +1,37 @@
+body {
+    background-color: yellow;
+    font-family: Verdana, sans-serif;
+}
+h1 {
+    color: orange;
+    text-align: center;
+}
+ul {
+    list-style-type: disc;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li {
+    list-style-type: disc;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li li {
+    list-style: circle;
+}
+
+a:link {
+    color: red;
+}
+a:hover {
+    color: green;
+    text-decoration: none;
+}
+a:visited {
+    color: purple;
+}
+a:active {
+    color: lime;
+}

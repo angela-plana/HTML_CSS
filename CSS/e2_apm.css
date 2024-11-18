@@ -1,0 +1,21 @@
+body {
+    background: aqua;
+    font-family: Verdana, sans-serif;
+}
+.centrat {
+    text-align: center;
+}
+.plata {
+    background: silver;
+}
+.blau {
+    color: blue;
+    font-size: 20px;
+}
+.vermell {
+    color: red;
+}
+.dreta {
+    text-align: right;
+    font-size: 25px;
+}
